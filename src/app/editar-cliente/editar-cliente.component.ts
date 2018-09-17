@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ClientRESTService} from '../services/client-rest.service'
-import {Router} from '@angular/router'
+import { ActivatedRoute, Router} from '@angular/router'
 
 @Component({
   selector: 'app-editar-cliente',
@@ -11,6 +11,7 @@ export class EditarClienteComponent implements OnInit {
 
   constructor(
     private servicioCliente: ClientRESTService,
+    private activatedRoute: ActivatedRoute,
     private router: Router 
   ) { }
 
@@ -24,9 +25,12 @@ export class EditarClienteComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.servicioCliente.oneClient("1")
-    .subscribe(cliente=>{
-      this.clientes = cliente
+    this.activatedRoute.params
+    .subscribe(params=>{
+      this.servicioCliente.oneClient(params.id)
+      .subscribe(cliente=>{
+        this.clientes = cliente
+      })
     })
   }
 

@@ -7,6 +7,6 @@ import {NuevoClienteComponent} from './nuevo-cliente/nuevo-cliente.component'
 export const routes: Routes = [
   {path:'', redirectTo:'client', pathMatch:'full'},
   {path:'client', component:ClientComponent},
-  {path:'editarCliente', component:EditarClienteComponent},
+  {path:'editarCliente/:id', component:EditarClienteComponent},
   {path:'nuevoCliente', component:NuevoClienteComponent}
 ]

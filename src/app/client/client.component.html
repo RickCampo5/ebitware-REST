@@ -1,5 +1,4 @@
 <div class="links">
-  <a [routerLink]="['/editarCliente']" >Editar Cliente 1</a>
   <a [routerLink]="['/nuevoCliente']">Crear Nuevo Cliente</a>
 </div>
 <section>
@@ -12,5 +11,6 @@
       <li>Estatura: {{cliente.Estatura}}</li>
       <li>Peso: {{cliente.Peso}}</li>
     </ul>
+    <a class="editar" [routerLink]="['/editarCliente', cliente.Cliente_ID]">Editar</a>
   </article>
 </section>

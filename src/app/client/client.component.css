@@ -28,3 +28,10 @@ ul{
   height: 65px;
   text-align: center;
 }
+
+.editar{
+  display: block;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+}

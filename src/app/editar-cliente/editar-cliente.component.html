@@ -1,0 +1,23 @@
+<div class="links">
+  <a [routerLink]="['/client']">Volver</a>
+  <a [routerLink]="['/nuevoCliente']">Crear Nuevo Cliente</a>
+</div>
+<section *ngFor="let cliente of clientes">
+  <div class="formulario">
+    <label>Nombre:</label>
+    <input [(ngModel)]="cliente.Nombre" type="text">
+    <label>Apellidos:</label>
+    <input [(ngModel)]="cliente.Apellidos" type="text">
+    <label>Nombre de usuario:</label>
+    <input [(ngModel)]="cliente.Nombre_Usuario" type="text">
+    <label>Edad:</label>
+    <input [(ngModel)]="cliente.Edad" type="text">
+    <label>Estatura:</label>
+    <input [(ngModel)]="cliente.Estatura" type="text">
+    <label>Peso:</label>
+    <input [(ngModel)]="cliente.Peso" type="text">
+    <label>GEB:</label>
+    <input [(ngModel)]="cliente.GEB" type="text">
+    <button (click)="guardar()">Guardar</button>
+  </div>
+</section>

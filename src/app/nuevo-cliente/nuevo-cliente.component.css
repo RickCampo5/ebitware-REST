@@ -1,0 +1,27 @@
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario input{
+  width: 300px;
+  margin: 10px;
+}
+
+.formulario button{
+  width: 150px;
+}
+
+.links a{
+  margin: 10px;
+  color: white
+}
+
+.links{
+  background-color: #000;
+  margin: 0;
+  height: 65px;
+  text-align: center;
+}

@@ -1,0 +1,16 @@
+<div class="links">
+  <a [routerLink]="['/editarCliente']" >Editar Cliente 1</a>
+  <a [routerLink]="['/nuevoCliente']">Crear Nuevo Cliente</a>
+</div>
+<section>
+  <article *ngFor="let cliente of clientes">
+    <h2>{{cliente.Nombre}} {{cliente.Apellidos}}</h2>
+    <p>ID: {{cliente.Cliente_ID}}</p>
+    <p>Nombre de Usuario: {{cliente.Nombre_Usuario}}</p>
+    <ul>
+      <li>Edad: {{cliente.Edad}}</li>
+      <li>Estatura: {{cliente.Estatura}}</li>
+      <li>Peso: {{cliente.Peso}}</li>
+    </ul>
+  </article>
+</section>

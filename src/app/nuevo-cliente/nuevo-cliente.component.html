@@ -1,0 +1,12 @@
+<div class="links">
+    <a [routerLink]="['/client']">Volver</a>
+</div>
+<section class="formulario">
+    <input placeholder="Nombre" [(ngModel)]="cliente.Nombre" type="text">
+    <input placeholder="Apellidos" [(ngModel)]="cliente.Apellidos" type="text">
+    <input placeholder="Nombre de Usuario" [(ngModel)]="cliente.Nombre_Usuario" type="text">
+    <input placeholder="Correo" [(ngModel)]="cliente.Correo_Electronico" type="text">
+    <input placeholder="Contraseña" [(ngModel)]="cliente.Contrasena" type="text">
+
+    <button (click)="guardar()">Guardar</button>
+</section>

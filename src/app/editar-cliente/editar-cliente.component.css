@@ -1,0 +1,33 @@
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.links a{
+  margin: 10px;
+  color: white
+}
+
+.links{
+  background-color: #000;
+  margin: 0;
+  height: 65px;
+  text-align: center;
+}
+
+section input{
+  width: 300px;
+}
+
+section button{
+  width: 150px;
+}

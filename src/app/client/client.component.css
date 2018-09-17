@@ -1,0 +1,30 @@
+section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+article{
+  width: 400px;
+  text-align: center;
+  border-radius: 20px;
+  margin: 10px;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.365)
+}
+
+ul{
+ list-style: none; 
+}
+
+.links a{
+  margin: 10px;
+  color: white
+}
+
+.links{
+  background-color: #000;
+  margin: 0;
+  height: 65px;
+  text-align: center;
+}
